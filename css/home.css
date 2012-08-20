@@ -57,21 +57,20 @@ body{
     margin: 0 auto;
 }
 header{ width:100%; height: 167px; box-shadow: -1px 1px 5px #C0C0C0; }
-#logo{background-image: url("../images/logo.png");
+#logo{
+	background-image: url("../images/logo.png");
     background-position: 35px 85px;
     background-repeat: no-repeat;
     float: left;
     height: 167px;
-    width: 315px;
-
-
-        }
+    width: 323px;
+}
 		
 #header-container{ width:701px;height:167px; display:inline; float:left;}
 #search { height: 47px;
     padding-top: 26px;
     width: 100%;} 
-#menu{  width:100%; height:87px; background-image:url(images/bg-main.png); padding-top: 13px; border-radius: 3px 3px 3px 3px; box-shadow: 0px -1px 5px #C0C0C0;} 
+#menu{  width:100%; height:80px; background-image:url(images/bg-main.png); padding-top: 13px; border-radius: 3px 3px 3px 3px; box-shadow: 0px -1px 5px #C0C0C0;} 
 #menu ul { height:100%; background-color:#fff;}
 #menu li{ width:138px; float:left; text-align:center; padding-top: 35px; text-transform:uppercase; cursor: pointer; font-family: Trebuchet MS; color:#000; font-size:18px; font-weight:bolder; background: url(images/bg-arrow.png) top center no-repeat; background-size:9%;}
 #search form { color: #6A6A6A;
@@ -110,9 +109,10 @@ padding-top: 6px;
 
 #welcome_container
 {
-	width: 590px;
+	width: auto;
 	padding: 20px;
 	background-color: #EEEEEE;
+	float: left;
 }
 
 #welcome_container .header
@@ -194,7 +194,6 @@ a {
 
 #contenedor-noticias {
 	background-image: url("images/fondo.png");
-	width: 26%;
 }
 
 #titulo-noticias {
@@ -266,12 +265,11 @@ font-size:13px;
 
 #contenedor-exito {
 	float:left;
-	margin-right: 20px;
-    width: 251px;
+	width: 49%;
 }
 
 #textoL-titulo-contenedor {
-	background: none repeat scroll 0% 0% black;
+	background: none repeat scroll 100% 0% black;
 }
 
 #texto-contenedor {
@@ -301,6 +299,17 @@ h4#titulo{
     margin-bottom: 0;
 }
 
+#content-left {
+	float: left;
+	width: 70%;
+}
+
+#content-right {
+	width: 25%;
+	float: left;
+	padding: 20px;
+}
+
 #texto-contenedor{
        margin-left:10px;
 }
@@ -308,24 +317,29 @@ h4#titulo{
        background-image: url("images/fondo.png");
        background-repeat: no-repeat;
        height: 52px;
-       width: 245px;
+       width: auto;
 
 }
 #link-content1{
-      
       color: black;
       width: 190px;
 }
 
 /* Footer */
+#footer {
+	box-shadow: -1px 1px 5px silver;
+}
 
 /* Getting the new tags to behave */
 article,footer, header,section {display:block}
 .wrapper {width:100%;overflow:hidden}
 /* Global properties */
 
-.main {	margin:0 auto;	width:980px}
-.body2 {background:#e6e6e6;border-bottom:1px solid #4e4e4e}
+.main {
+	width:auto; 
+	padding: 20px;
+}
+.body2 {background:#e6e6e6;}
 /* main layout */
 a {color:#000;text-decoration:underline;outline:none}
 a:hover {text-decoration:none}
@@ -334,8 +348,13 @@ h2 {font-size:36px;color:#000;line-height:1.2em;padding:36px 0 21px 0;letter-spa
 h3 {font-size:24px;line-height:1.2em;color:#000;padding:37px 0 13px 0;letter-spacing:-1px}
 p {padding-bottom:18px}
 /* content */
-#content {padding-bottom:48px;width:100%;overflow:hidden}
-#content2 {padding-bottom:49px;width:100%;overflow:hidden}
+#content {
+padding-bottom:48px;
+width:100%;
+overflow:hidden;
+box-shadow: -1px 1px 5px silver;
+}
+#content2 {width:100%;overflow:hidden}
 .button {display:inline-block;background:url(../images/button_2.png) 0 0 no-repeat;width:129px;height:44px;font-weight:bold;text-align:center;text-decoration:none;line-height:36px}
 .button:hover {color:#76a300}
 .list1 li {font-size:12px;line-height:24px}
