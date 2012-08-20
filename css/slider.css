@@ -1,0 +1,116 @@
+/* main vertical scroll */
+  #main {
+  position:relative;
+  overflow:hidden;
+  height: 444px;
+  }
+
+  /* root element for pages */
+  #pages {
+  position:absolute;
+  height:20000em;
+  }
+
+  /* single page */
+  .page {
+  padding:10px;
+  height: 450px;
+  background:#222 url(/media/img/gradient/h600.png) 0 0 repeat-x;
+  width:683px;
+  }
+
+  /* root element for horizontal scrollables */
+  .scrollable {
+  position:relative;
+  overflow:hidden;
+  width: 510px;
+  height: 450px;
+  margin-left: 12%;
+  }
+
+  /* root element for scrollable items */
+  .scrollable .items {
+  width:20000em;
+  position:absolute;
+  clear:both;
+  }
+
+  /* single scrollable item */
+  .item {
+  float:left;
+  cursor:pointer;
+  width:500px;
+  height:450px;
+  padding:10px;
+  }
+
+  /* main navigator */
+  #main_navi {
+  float:left;
+  padding:0px !important;
+  margin:0px !important;
+  }
+
+  #main_navi li {
+  background-color:#333;
+  border-top:1px solid #666;
+  clear:both;
+  color:#FFFFFF;
+  font-size:12px;
+  height:90px;
+  list-style-type:none;
+  padding:10px;
+  width:302px;
+  cursor:pointer;
+  }
+
+  #main_navi li:hover {
+  background-color:#444;
+  }
+
+  #main_navi li.active {
+  background-color:#555;
+  }
+
+  #main_navi img {
+  float:left;
+  margin-right:10px;
+  }
+
+  #main_navi strong {
+  display:block;
+  }
+
+  #main div.navi {
+  margin-left:250px;
+  cursor:pointer;
+  }
+
+/* position and dimensions of the navigator */
+.navi {
+    margin-left:328px;
+    width:200px;
+    height:20px;
+}
+
+
+/* items inside navigator */
+.navi a {
+    width:8px;
+    height:8px;
+    float:left;
+    margin:3px;
+    background:url(/images/navigator.png) 0 0 no-repeat;
+    display:block;
+    font-size:1px;
+}
+
+/* mouseover state */
+.navi a:hover {
+    background-position:0 -8px;
+}
+
+/* active state (current page state) */
+.navi a.active {
+    background-position:0 -16px;
+}
